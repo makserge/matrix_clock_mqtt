@@ -41,7 +41,7 @@ void SunFounderEmo::setDigit(byte digit, byte value) {
 }
 
 void SunFounderEmo::showTimeTick(boolean isShown) {
-  byte data[16];
+  byte data[24];
   memcpy(data, isShown ? TIME_SEMICOLON : DIGIT_SWITCH_OFF, 24);
   
   setData(data);
